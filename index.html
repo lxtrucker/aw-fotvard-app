@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÅW:s Fotvård</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+<script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then(registration => {
+            console.log('Service Worker registrerad med framgång:', registration);
+          })
+          .catch(err => {
+            console.log('Registrering av Service Worker misslyckades:', err);
+          });
+      });
+    }
+</script>
+</head>
+<body>
+    <header>
+        <h1>ÅW:s Fotvård</h1>
+        <p>Din partner för friska fötter.</p>
+    </header>
+
+    <main>
+        <section class="info-section">
+            <h2>Om oss</h2>
+            <p>ÅW:s Fotvård erbjuder professionella fotvårdsbehandlingar utförda av Åsa Westlind. Vi hjälper dig med allt från allmän fotvård till specialiserade problem. Vårt mål är att ge dig mjuka, friska och smärtfria fötter.</p>
+        </section>
+
+        <section class="contact-section">
+            <h2>Kontakt</h2>
+            <ul>
+                <li>
+                    <span>Namn:</span>
+                    <span>Åsa Westlind</span>
+                </li>
+                <li>
+                    <span>Telefon:</span>
+                    <a href="tel:+46730618847">073-061 88 47</a>
+                </li>
+                <li>
+                    <span>E-post:</span>
+                    <a href="mailto:awsfotvard@gmail.com">awsfotvard@gmail.com</a>
+                </li>
+                <li>
+                    <span>Adress:</span>
+                    <span>Revirvägen 18, 695 30 Laxå</span>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ÅW:s Fotvård</p>
+    </footer>
+    <section class="schedule-section">
+    <h2>Lediga tider</h2>
+   <p>Ring eller maila för att boka tid.</p> 
+    <ul id="schedule-list">
+        </ul>
+</section>
+
+    <script src="app.js"></script>
+</body>
+</html>

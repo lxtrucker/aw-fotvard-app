@@ -1,0 +1,21 @@
+{
+  "name": "ÅW:s Fotvård",
+  "short_name": "ÅW:s Fotvård",
+  "description": "Din partner för friska fötter.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f2eef8",
+  "theme_color": "#B19CD9",
+  "icons": [
+    {
+      "src": "ikoner/ikon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "ikoner/ikon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
