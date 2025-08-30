@@ -56,7 +56,7 @@
     </main>
 <section class="contact-form-section">
     <h2>Skicka ett meddelande</h2>
-    <form id="contact-form" action="https://formspree.io/f/xldwjegg" method="POST">
+    <form action="https://formspree.io/f/xldwjegg" method="POST">
         <label for="name">Namn:</label>
         <input type="text" id="name" name="name" required>
 
@@ -68,24 +68,18 @@
 
         <button type="submit">Skicka</button>
     </form>
-    <div id="form-status"></div>
-</section>
 </section>
     <footer>
         <p>&copy; 2024 ÅW:s Fotvård</p>
     </footer>
-    <section class="schedule-section">
+<section class="schedule-section">
     <h2>Lediga tider</h2>
-   <p>Ring eller maila för att boka tid.</p> 
-    <ul id="schedule-list">
-        </ul>
+    <p>Se lediga tider i kalendern nedan. Ring eller maila för att boka tid.</p>
+    <div class="calendar-container">
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FStockholm&showPrint=0&src=YXdzZm90dmFyZEBnbWFpbC5jb20&color=%23039be5" style="border: 0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+    </div>
 </section>
 
     <script src="app.js"></script>
 </body>
 </html>
-
-
-
-
-
